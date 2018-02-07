@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|favicon\.ico|apple-touch-icon\.png|docs|simplesaml|images|img|css|js|fonts|squirrelmail|templates|uploads|work|sitemap\.xml)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+AddType font/ttf .ttf
+AddType font/eot .eot
+AddType font/otf .otf
+AddType font/woff .woff
+AddType application/x-font-woff2 .woff2
