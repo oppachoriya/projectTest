@@ -27,4 +27,12 @@ class User extends CI_Controller {
 		$this->load->view('userList', $data) ;
 
 	}
+
+	public function listUsers()
+	{
+
+		$data['userList'] = Array ('User1','User2','User3','User4','User5','User6') ;
+		$this->load->view('userList', $data) ;
+
+	}
 }
