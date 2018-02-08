@@ -23,9 +23,8 @@ class User extends CI_Controller {
 		$this->jenkinsObj->setNameArr(
 			Array ('Name1','Name2','Name3','Name4')) ;
 
-		foreach ($this->jenkinsObj->getNameArr() as $obj ) {
-			echo $obj ." " ;
-		}
+		$data['userList'] = $this->jenkinsObj->getNameArr();
+		$this->load->view('userList', $data) ;
 
 	}
 }

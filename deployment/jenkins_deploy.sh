@@ -64,12 +64,8 @@ npm install
 npm run build
 cd $dir
 
-php index.php cron run taskFirst
+#php index.php cron run taskFirst
 ./vendor/bin/doctrine orm:generate-proxies
-php index.php cron run cache_prepopulate
+#php index.php cron run cache_prepopulate
 
-testDir = '/var/www/html/application/tests/';
-
-
-./vendor/bin/phpunit $testDir
-
+./vendor/bin/phpunit /var/www/html/application/tests/
