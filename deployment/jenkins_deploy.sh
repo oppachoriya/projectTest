@@ -69,3 +69,4 @@ cd $dir
 #php index.php cron run cache_prepopulate
 
 ./vendor/bin/phpunit /var/www/html/application/tests/
+##
