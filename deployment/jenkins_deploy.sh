@@ -12,7 +12,7 @@ echo "
 
 ";
 uname=`whoami`
-dir='/var/www/html/';
+dir='/var/www/gamma/';
 cd $dir;
 git checkout application/views/sample/jenkinsTest.php
 
@@ -68,4 +68,8 @@ cd $dir
 ./vendor/bin/doctrine orm:generate-proxies
 #php index.php cron run cache_prepopulate
 
-./vendor/bin/phpunit /var/www/html/application/tests/
+./vendor/bin/phpunit /var/www/gamma/application/tests/
+
+cd asset/
+
+mvn clean test -Dos=linux -DisPass=true
