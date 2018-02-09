@@ -52,7 +52,7 @@ sed -i.bu "s/$oldversion/$version/g" .env;
 echo "Previous APP_VERSION $oldversion";
 echo "New APP_VERSION $version";
 
-php composer.phar install
+composer install
 npm install
 
 flyway migrate
