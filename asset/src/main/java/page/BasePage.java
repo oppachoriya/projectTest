@@ -14,7 +14,7 @@ public class BasePage {
 
 	public BasePage(WebDriver driver){
 		this.driver = driver;
-		driver.navigate().to("file:///C:/Users/UdayN/Desktop/file1.html");
+		driver.navigate().to("https://gamma.dealvector.com/user");
 		PageFactory.initElements(driver,this);
 	}
 

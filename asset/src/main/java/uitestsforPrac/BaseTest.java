@@ -22,7 +22,7 @@ public class BaseTest {
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\lib\\chromedriver.exe");
 		}
 		else {
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\lib\\chromedriver");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/lib/chromedriver");
 			options.addArguments("--headless");
 		}
 		options.addArguments("--start-maximized");
