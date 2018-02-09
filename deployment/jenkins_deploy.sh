@@ -71,5 +71,4 @@ cd $dir
 ./vendor/bin/phpunit /var/www/gamma/application/tests/
 
 cd asset/
-
 mvn clean test -Dos=linux -DisPass=true
