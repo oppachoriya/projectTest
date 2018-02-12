@@ -72,3 +72,5 @@ cd $dir
 
 cd asset/
 mvn clean test -Dos=linux -DisPass=true
+
+echo "Build Finish";
